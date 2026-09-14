@@ -56,14 +56,14 @@ def search_student():
 def update_student():
     print("\n--- Update Student ---")
 
-    name = input("Enter student name to update: ")
+    name = input("Enter students name to update: ")
 
     for student in students:
         if student["name"].lower() == name.lower():
 
             print("Student found.")
-            print("1. Update Name")
-            print("2. Update Age")
+            print("1.Update Name")
+            print("2.Update Age")
             print("3. Update Marks")
 
             choice = input("Enter your choice: ")
@@ -181,6 +181,5 @@ def main():
 
         else:
             print("Invalid choice. Please try again. ")
-
-
+            
 main()
